@@ -31,6 +31,5 @@ function myButtonClicked() {
     }
   }
 
-  document.getElementById("answers").innerHTML = 
-      counter1 + " ÷ " + counter2 + " = " + addedNumber;
+  document.getElementById("answers").innerHTML = counter1 + " ÷ " + counter2 + " = " + addedNumber;
 }
