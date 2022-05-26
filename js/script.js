@@ -23,13 +23,15 @@ function myButtonClicked() {
   const counter2 = parseInt(document.getElementById("counter2").value);
   var addedNumber = 0;
   var answer = counter1;
+  var remainder
 
   if (counter1 > 0 && counter2 > 0) {
     while (answer >= counter2) {
       addedNumber = addedNumber + 1;
-      answer = answer - counter2;
+      answer = answer - counter2
+      remainder = answer
     }
   }
 
-  document.getElementById("answers").innerHTML = counter1 + " ÷ " + counter2 + " = " + addedNumber;
+  document.getElementById("answers").innerHTML = counter1 + " ÷ " + counter2 + " = " + addedNumber + " Remainder is: " + remainder;
 }
